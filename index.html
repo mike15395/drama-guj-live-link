@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auditorium Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader"></div>
+    <main class="main">
+      <div class="button-container"><button id="latest-update-button" onclick="getLatestUpdate()"><b>Get latest Update</b></button></div>
+      <div class="date-time"></div>
+      <div class="booking-status-container">
+          <div class="status-container">
+              <div id="booked-icon"></div>
+              <b>Booked</b>
+              <div>&rarr;</div>
+              <div id="booked-count"></div>
+      
+          </div>
+          <div class="status-container">
+              <div id="vacant-icon"></div>
+              <b>Available</b>
+               <div>&rarr;</div>
+              <div id="vacant-count"></div>
+          </div>
+          <!-- <div class="status-container">
+              <div id="reserved-icon"></div>
+              <b>Reserved</b>
+               <div>&rarr;</div>
+              <div id="reserved-count"></div>
+          </div> -->
+           <div>
+                  <table border="1" id="details-table">
+      
+      
+      
+      
+                  </table>
+      </div>
+      </div>
+      
+        <div class="stage">STAGE</div>
+        <div id="auditorium"></div>
+    </main>
+  <script src="script.js"></script>
+</body>
+</html>
