@@ -27,11 +27,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 10px;
  width: 100%;
 }
 
-
+/* .auditorium-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+} */
 
 #booked-icon{
       width: 25px;
@@ -167,9 +174,9 @@ td,th{
   background-color: #FF0000;
 }
 
-.seat.reserved{
+/* .seat.reserved{
     background-color: #999;
-}
+} */
 
 .seat:hover {
   transform: scale(1.4);
@@ -247,12 +254,16 @@ td,th{
 
 @media (max-width: 480px) {
   #details-table{
-    transform: scale(0.75);
+    transform: scale(0.60);
+    align-items: flex-end;
+    justify-content: flex-end;
   }
   
   #auditorium{
     transform: scale(0.38);
-    margin-top: -50vh;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* margin-top: -40vh; */
   }
 
  
